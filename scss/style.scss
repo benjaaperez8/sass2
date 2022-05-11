@@ -1,0 +1,84 @@
+
+@import "./components/typography";
+@import "./base/reset";
+@import "./components/body";
+@import "./components/menu";
+@import "./components/footer";
+
+
+
+
+/*=====CAROUSEL======*/
+
+.carousel-inner{
+    max-height: 39rem;
+}
+
+
+    
+
+#iconos i{
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
+
+}
+@mixin movil(){
+    @media screen and (max-width: 768px){
+        @content;
+        }
+        
+    }
+    #intro{
+        
+        @include movil(){
+            width: 90%;
+        }
+    }
+        .servicio-fila{
+            @include movil(){
+            width: 100%;
+            text-align: center;
+            }
+        }
+    
+    
+
+@mixin movil() {
+    @media screen and (max-width: 576px) {
+        @content;
+        }
+        .icono-wrap{
+            @include movil(){
+            flex-wrap: wrap;
+            justify-content: center;
+            }
+        }
+    }
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+#sucursales div{
+    background: black;
+ 
+     span{
+        color:white;
+        font-size:xx-large;
+    }
+    
+}
+
+
+#sucarou img{
+   width: 80%;
+    display: block;
+}
+
+#suc1texto{
+    color: rgb(185, 165, 35);
+    margin-top: 3px;
+}
+
